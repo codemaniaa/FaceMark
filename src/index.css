@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  html { @apply antialiased; }
+  body {
+    @apply bg-surface text-white;
+    font-family: 'DM Sans', system-ui, sans-serif;
+  }
+  * { @apply box-border; }
+  ::-webkit-scrollbar       { @apply w-1.5 h-1.5; }
+  ::-webkit-scrollbar-track { @apply bg-transparent; }
+  ::-webkit-scrollbar-thumb { @apply bg-slate-700 rounded-full; }
+}
